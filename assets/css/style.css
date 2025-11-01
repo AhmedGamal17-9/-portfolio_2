@@ -18,6 +18,7 @@ html {
   --skill-bg: #f8f9fa;
   --portfolio-overlay: rgba(35,163,254,0.6);
   --portfolio-info-bg: rgba(255,255,255,0.9);
+  --menu-bg: rgba(0, 0, 0, 0.397);
 }
 .dark-theme {
   --bgcolor: #080e1c;
@@ -27,6 +28,7 @@ html {
   --skill-bg: rgba(255,255,255,0.05);
   --portfolio-overlay: rgba(35,163,254,0.6);
   --portfolio-info-bg: rgba(8,14,28,0.9);
+  --menu-bg: rgb(255, 255, 255);
 }
 body{
   background: var(--bgcolor);
@@ -460,3 +462,43 @@ footer p{
     grid-template-columns: 1fr;
   }
 }
+
+/* ========== Mobile Menu Button ========== */
+.menu-icon {
+  display: none;
+  font-size: 25px;
+  color: var(--textwhite);
+  cursor: pointer;
+}
+
+/* Show the button only on mobile */
+@media (max-width: 900px) {
+  .menu-icon {
+    display: block;
+  }
+
+  /* Hide the links by default */
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    left: 20px;
+    background: var(--bgcolor);
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px var(--menu-bg);
+    text-align: center;
+    z-index: 100;
+  }
+
+  /* When the class "active" is added, show the links */
+  .nav-links.active {
+    display: flex;
+  }
+}
+
+
+
