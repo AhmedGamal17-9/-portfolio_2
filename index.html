@@ -1,170 +1,355 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ali Reda | Web Developer Portfolio</title>
+
+  <!-- Font & Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-  <title>Ali Reda | Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-<body class="dark-theme">
+<body>
 
-  <!-- ========== Hero Section ========== -->
-  <section class="hero" id="home">
-    <header>
-      <nav>
-        <a href="#" class="logo"><span>MR</span>eda</a>
-        <div class="nav-links">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#portfolio">Portfolio</a>
-          <a href="#skills">Skills</a>
-          <a href="#experience">Experience</a>
-          <a href="#education">Education</a>
-          <a href="#contact">Contact</a>
-        </div>
-        <!-- زرار المينيو للموبايل -->
-        <span class="menu-icon">
-          <i class="fa-solid fa-bars"></i>
-        </span>
-        <span>
-          <i class="fa-solid fa-sun btn-mode"></i>
-        </span>
-      </nav>
-    </header>
+  <!-- ===== Navbar ===== -->
+  <header class="header" id="home">
+    <nav class="navbar container">
+      <a href="#" class="logo"><span><sup>Eng</sup></span>Ali</a>
 
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Projects</a>
+        <a href="#teaching">Services</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <i class="fa-solid fa-sun btn-mode"></i>
+        <i class="fa-solid fa-bars menu-icon"></i>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== Hero Section ===== -->
+<section class="hero">
+  <div class="hero-container">
+    <div class="hero-text">
+      <h4>Hello, I'm <span>Mahmoud Taha</span></h4>
+      <h1>Frontend & UI/UX Developer</h1>
+      <h3>I transform ideas into beautiful and interactive websites.</h3>
+      <p>
+        I specialize in creating modern, responsive websites using HTML, CSS, JavaScript, and React, focusing on performance and user experience.
+      </p>
+      <div class="hero-buttons">
+        <a href="#portfolio" class="btn primary-btn">View Projects</a>
+        <a href="#contact" class="btn secondary-btn">Contact Me</a>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="assets/images/hero-img.png" alt="Mahmoud Taha" />
+    </div>
+  </div>
+</section>
+
+  <!-- ===== About Section ===== -->
+  <section class="about section" id="about">
+    <div class="container about-container">
+      <div class="about-img">
+        <img src="assets/images/about.jpg" alt="About Ali Reda">
+      </div>
+
+      <div class="about-content">
+        <h2>About Me</h2>
+        <p>
+          I’m <strong>Ali Reda</strong>, a passionate <strong>Web Developer</strong> with experience in building dynamic and responsive websites and web applications using modern technologies.
+        </p>
+        <p>
+          I specialize in front-end and back-end development, focusing on creating clean, scalable, and maintainable code.
+        </p>
+        <p>
+          My work includes developing websites, dashboards, and APIs using technologies like <strong>React</strong>, <strong>Node.js</strong>, <strong>Express</strong>, and <strong>MongoDB</strong>.
+        </p>
+        <p>
+          I’m always eager to learn new tools and frameworks to deliver innovative and efficient digital solutions.
+        </p>
+        <a href="#contact" class="btn primary-btn">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Portfolio Section ===== -->
+  <section class="portfolio section" id="portfolio">
     <div class="container">
-      <div class="div-text">
-        <h4>Hello my name is</h4>
-        <h1>Ali Reda</h1>
-        <span>Front-End Developer</span>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo reiciendis ea numquam laboriosam odit illum aut corrupti.</p>
-        <a href="assets/pdf/cv.pdf" download class="btn">Download CV</a>
-      </div>
+      <h2>My Projects</h2>
 
-      <div class="div-image">
-        <!-- صورة البورتريه الرئيسية (مقاس تقريبي 400x400px) -->
-        <img src="assets/images/Ali-Reda-hero.png" alt="This is Ali Reda image">
-      </div>
-    </div>
-  </section>
-  <!-- ========== About Section ========== -->
-  <section class="about" id="about">
-    <h2>About Me</h2>
-    <div class="about-container">
-      <!-- صورة عن المستخدم (مقاس 300x300px) -->
-      <div class="about-image">
-        <img src="assets/images/about.jpg" alt="About Me">
-      </div>
-      <div class="about-text">
-        <p>Hello! I'm Ali Reda, a passionate Front-End Developer with experience in creating modern, responsive, 
-          and interactive websites. I love turning ideas into reality with clean and efficient code.</p>
-      </div>
-    </div>
-  </section>
+      <div class="portfolio-grid">
+        <div class="portfolio-card">
+          <img src="assets/images/Project 1.jpg" alt="Project 1">
+          <div class="overlay">
+            <h3>Responsive Website</h3>
+            <p>Built using HTML, CSS, and JavaScript.</p>
+            <a href="#" target="_blank" class="btn small-btn"><i class="fa-solid fa-up-right-from-square"></i> View</a>
+          </div>
+        </div>
 
-  <!-- ========== Portfolio Section ========== -->
-  <section class="portfolio" id="portfolio">
-    <h2>My Portfolio</h2>
-    <div class="portfolio-container">
-      <!-- كل مشروع: ضع صورة مشروع (مقاس 400x250px) -->
-      <div class="portfolio-item">
-        <img src="assets/images/Project 1.jpg" alt="Project 1">
-        <div class="portfolio-info">
-          <h3>Project One</h3>
-          <p>Responsive website for a client project using HTML, CSS, JS.</p>
+        <div class="portfolio-card">
+          <img src="assets/images/Project 2.jpg" alt="Project 2">
+          <div class="overlay">
+            <h3>E-Commerce Front-End</h3>
+            <p>Modern user interface for online shopping experience.</p>
+            <a href="#" target="_blank" class="btn small-btn"><i class="fa-solid fa-up-right-from-square"></i> View</a>
+          </div>
         </div>
-      </div>
-      <div class="portfolio-item">
-        <img src="assets/images/Project 2.jpg" alt="Project 2">
-        <div class="portfolio-info">
-          <h3>Project Two</h3>
-          <p>E-commerce front-end website with modern UI/UX design.</p>
-        </div>
-      </div>
-      <div class="portfolio-item">
-        <img src="assets/images/Project 3.jpg" alt="Project 3">
-        <div class="portfolio-info">
-          <h3>Project Three</h3>
-          <p>Interactive web application using React.js and CSS animations.</p>
+
+        <div class="portfolio-card">
+          <img src="assets/images/Project 3.jpg" alt="Project 3">
+          <div class="overlay">
+            <h3>Full-Stack Web App</h3>
+            <p>React and Node.js application with database integration.</p>
+            <a href="#" target="_blank" class="btn small-btn"><i class="fa-solid fa-up-right-from-square"></i> View</a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ========== Skills Section ========== -->
-   <section class="skills" id="skills" data-aos="fade-up">
-    <h2 class="section-title">My Skills</h2>
-    <div class="skills-container">
-      <div class="skill"><i class="fab fa-html5"></i><span>HTML5</span></div>
-      <div class="skill"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
-      <div class="skill"><i class="fab fa-js-square"></i><span>JavaScript</span></div>
-      <div class="skill"><i class="fab fa-react"></i><span>React</span></div>
-      <div class="skill"><i class="fab fa-bootstrap"></i><span>Bootstrap</span></div>
-      <div class="skill"><i class="fab fa-git-alt"></i><span>Git</span></div>
-      <div class="skill"><i class="fab fa-github"></i><span>GitHub</span></div>
+  <!-- ===== Services Section (Renamed Teaching) ===== -->
+  <section class="teaching section" id="teaching">
+    <div class="container">
+      <h2>My Services</h2>
+
+      <div class="portfolio-grid">
+        <div class="portfolio-card">
+          <img src="assets/power_point/powerpoint.jpeg" alt="Web Design Service">
+          <div class="overlay">
+            <h3>UI/UX Design</h3>
+            <p>Designing modern and intuitive user interfaces for web platforms.</p>
+            <a href="#" class="btn small-btn"><i class="fa-solid fa-eye"></i> View</a>
+          </div>
+        </div>
+
+        <div class="portfolio-card">
+          <img src="assets/video/video.png" alt="Development">
+          <div class="overlay">
+            <h3>Web Development</h3>
+            <p>Building responsive and scalable websites and web applications.</p>
+            <a href="#" target="_blank" class="btn small-btn">
+              <i class="fa-solid fa-play"></i> View
+            </a>
+          </div>
+        </div>
+
+        <div class="portfolio-card">
+          <img src="assets/pdf/pdf.png" alt="API Development">
+          <div class="overlay">
+            <h3>API Integration</h3>
+            <p>Creating and connecting APIs for seamless app functionality.</p>
+            <a href="#" target="_blank" class="btn small-btn">
+              <i class="fa-solid fa-file-code"></i> View
+            </a>
+          </div>
+        </div>
+
+        <div class="portfolio-card">
+          <img src="assets/images/certificate.jpg" alt="Certificate">
+          <div class="overlay">
+            <h3>Certifications</h3>
+            <p>Professional certificates in web development and programming.</p>
+            <a href="assets/files/certificate.pdf" target="_blank" class="btn small-btn">
+              <i class="fa-solid fa-award"></i> View
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
-  <!-- ========== Experience Section ========== -->
-  <section class="experience" id="experience">
+
+  <!-- ===== Skills Section ===== -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <h2>My Skills</h2>
+
+      <div class="skills-group">
+        <h3>Web Development</h3>
+        <ul>
+          <li><i class="fa-solid fa-code"></i> Front-End: HTML, CSS, JavaScript, React</li>
+          <li><i class="fa-solid fa-server"></i> Back-End: Node.js, Express</li>
+          <li><i class="fa-solid fa-database"></i> Databases: MongoDB, MySQL</li>
+          <li><i class="fa-solid fa-gears"></i> RESTful API Development</li>
+          <li><i class="fa-solid fa-bug"></i> Debugging & Optimization</li>
+        </ul>
+
+        <h3>Tools & Technologies</h3>
+        <ul>
+          <li><i class="fa-solid fa-code-branch"></i> Git & GitHub</li>
+          <li><i class="fa-solid fa-cloud"></i> Deployment (Vercel, Netlify, AWS)</li>
+          <li><i class="fa-solid fa-laptop-code"></i> VS Code, Postman, Figma</li>
+          <li><i class="fa-solid fa-sitemap"></i> System Design</li>
+        </ul>
+
+        <h3>Languages</h3>
+        <ul>
+          <li><i class="fa-solid fa-language"></i> Arabic: Native</li>
+          <li><i class="fa-solid fa-globe"></i> English: Fluent</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Experience Section ===== -->
+<section id="experience" class="section">
+  <div class="container">
     <h2>Experience</h2>
-    <div class="experience-container">
-      <div class="experience-item">
-        <h3>Front-End Developer</h3>
-        <span>ABC Company | 2022 - Present</span>
-        <p>Developed responsive web applications and optimized UI/UX for high performance.</p>
+    <div class="experience-grid">
+      <!-- Card 1 -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <i class="fa-solid fa-code fa-2x"></i>
+            <h3>Frontend Developer</h3>
+            <span>ABC Tech | Jan 2022 - Present</span>
+          </div>
+          <div class="flip-card-back">
+            <p>Developed responsive web apps with HTML, CSS, JS & React.</p>
+            <div class="skills">
+              <div class="skill-bar">
+                <span data-width="100%">React</span>
+              </div>
+              <div class="skill-bar">
+                <span data-width="100%">JS</span>
+              </div>
+              <div class="skill-bar">
+                <span data-width="100%">CSS</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="experience-item">
-        <h3>Junior Web Developer</h3>
-        <span>XYZ Agency | 2020 - 2022</span>
-        <p>Worked on multiple client projects, implemented designs using HTML, CSS, and JS.</p>
+
+      <!-- Card 2 -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <i class="fa-solid fa-pencil-ruler fa-2x"></i>
+            <h3>UI/UX Designer</h3>
+            <span>Design Studio | Jun 2021 - Dec 2021</span>
+          </div>
+          <div class="flip-card-back">
+            <p>Created interactive prototypes & user-friendly interfaces.</p>
+            <div class="skills">
+              <div class="skill-bar">
+                <span data-width="100%">Figma</span>
+              </div>
+              <div class="skill-bar">
+                <span data-width="100%">Adobe XD</span>
+              </div>
+              <div class="skill-bar">
+                <span data-width="100%">Photoshop</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <i class="fa-solid fa-briefcase fa-2x"></i>
+            <h3>Intern</h3>
+            <span>Startup Hub | Jan 2021 - May 2021</span>
+          </div>
+          <div class="flip-card-back">
+            <p>Assisted in web development and team collaboration.</p>
+            <div class="skills">
+              <div class="skill-bar">
+                <span data-width="100%">HTML/CSS</span>
+              </div>
+              <div class="skill-bar">
+                <span data-width="100%">JS</span>
+              </div>
+              <div class="skill-bar">
+                <span data-width="100%">Git</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- ===== Education Section ===== -->
+  <section class="education section" id="education">
+    <div class="container">
+      <h2>Education & Courses</h2>
+
+      <div class="education-grid">
+        <div class="education-block">
+          <h3><i class="fa-solid fa-user-graduate"></i> Education</h3>
+          <ul>
+            <li><strong>Bachelor’s Degree in Computer Science</strong> | Egypt, 2018</li>
+            <li><strong>Web Development Training in ITI</strong> | 2019</li>
+          </ul>
+        </div>
+
+        <div class="education-block">
+          <h3><i class="fa-solid fa-book"></i> Courses & Certifications</h3>
+          <ul>
+            <li>React & Node.js Advanced Course</li>
+            <li>Full-Stack Web Development Bootcamp</li>
+            <li>REST API & Database Design</li>
+            <li>Git & Version Control</li>
+            <li>UI/UX Design Principles</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ========== Education Section ========== -->
-  <section class="education" id="education">
-    <h2>Education</h2>
-    <div class="education-container">
-      <div class="education-item">
-        <h3>Bachelor of Computer Science</h3>
-        <span>University of Cairo | 2016 - 2020</span>
-      </div>
-      <div class="education-item">
-        <h3>Web Development Bootcamp</h3>
-        <span>Online Course | 2021</span>
-      </div>
-    </div>
-  </section>
+  <!-- ===== Contact Section ===== -->
+  <section class="contact section" id="contact">
+    <div class="container contact-container">
+      <h2>Contact Me</h2>
 
-  <!-- ========== Contact Section ========== -->
-  <section class="contact" id="contact" data-aos="fade-up">
-    <h2 class="section-title">Contact</h2>
-    <div class="contact-content">
       <div class="contact-info">
-        <p><i class="fas fa-envelope"></i> <a href="#">ali.reda@gmail.com</a></p>
-        <p><i class="fas fa-phone"></i> 01550232114</p>
-        <p><i class="fa-solid fa-location-dot"></i> Cairo, Egypt</p>
+        <p><i class="fa-solid fa-envelope"></i> <a href="mailto:mt764371@gmail.com">alireda199@gmail.com</a></p>
+        <p><i class="fa-solid fa-phone"></i> <a href="tel:+971563621047">+971 26 352 1947</a></p>
+        <p><i class="fa-solid fa-location-dot"></i> Dubai, United Arab Emirates</p>
+
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
       </div>
-      <div class="social-icon">
-      <a href="#"><i class="fa-brands fa-facebook"></i></a>
-      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-      <a href="#"><i class="fa-brands fa-instagram"></i></a>
-      <a href="#"><i class="fa-brands fa-github"></i></a>      
-      </div>      
+
+      <form action="https://formsubmit.co/email@gmail.com" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn primary-btn">
+          <i class="fa-solid fa-paper-plane"></i> Send Message
+        </button>
+      </form>
     </div>
   </section>
 
-  <!-- ========== Footer Section ========== -->
+  <!-- ===== Footer ===== -->
   <footer>
-    <p>&copy; 2025 Ali Reda. |  All rights reserved.</p>
-    <div class="footer-social">
-
-    </div>
+    <p>&copy; 2025 Ali Reda | All Rights Reserved.</p>
   </footer>
 
-  <!-- ========== Script ========== -->
-  <script src="assets/js/js.js"></script>
 
+  <!-- JS -->
+  <script src="assets/js/js.js"></script>
 </body>
 </html>
