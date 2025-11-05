@@ -374,6 +374,8 @@ h1, h2, h3, h4 {
   border-radius: 10px;
   box-shadow: var(--shadow);
   cursor: pointer;
+
+  /* تحسين الأداء */
   backface-visibility: hidden;
   transform: translateZ(0);
   will-change: transform;
@@ -392,6 +394,8 @@ h1, h2, h3, h4 {
   align-items: center;
   padding: 20px;
   transition: opacity 0.3s ease, transform 0.3s ease;
+
+  /* الخلفية شفافة بدون فلاش */
   background-clip: padding-box;
 }
 
@@ -476,6 +480,9 @@ h1, h2, h3, h4 {
   }
 }
 
+
+
+
 /* =======================================
    EDUCATION
    ======================================= */
@@ -491,13 +498,6 @@ h1, h2, h3, h4 {
   padding: 20px;
   border-radius: 10px;
   box-shadow: var(--shadow);
-  /* box-shadow: 0 5px 20px rgba(0,0,0,0.1); */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.education-block:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 30px rgba(35,163,254,0.3);
 }
 
 .education-block h3 {
