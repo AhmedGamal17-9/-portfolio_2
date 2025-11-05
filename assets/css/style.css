@@ -3,6 +3,7 @@
    ======================================= */
 :root {
   --primary-color: #007bff;
+  --card-color: #007bff;
   --primary-light: #e6f0ff;
   --secondary-color: #1b1b1b;
   --bg-color: #ffffff;
@@ -16,6 +17,7 @@
 /* Dark Mode Variables */
 body.dark-mode {
   --bg-color: #0f1624;
+  --card-color: #0a53a0cc;
   --primary-light: #1a2236;
   --text-color: #f5f5f5;
   --text-muted: #cccccc;
@@ -358,6 +360,10 @@ h1, h2, h3, h4 {
   transform: translateY(0);
 }
 
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
 .flip-card-inner {
   position: relative;
   width: 100%;
@@ -368,16 +374,15 @@ h1, h2, h3, h4 {
   border-radius: 10px;
   box-shadow: var(--shadow);
   cursor: pointer;
-  
-}
 
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
+  /* تحسين الأداء */
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  will-change: transform;
 }
 
 .flip-card-front,
 .flip-card-back {
-  background: transparent;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -388,12 +393,16 @@ h1, h2, h3, h4 {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  transition: all 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+
+  /* الخلفية شفافة بدون فلاش */
+  background-clip: padding-box;
 }
 
 /* Front */
 .flip-card-front {
   color: var(--text-color);
+  opacity: 1;
 }
 
 .flip-card-front h3 {
@@ -411,14 +420,17 @@ h1, h2, h3, h4 {
   box-shadow: 0 0 20px var(--primary-color), 0 0 40px rgba(0,123,255,0.3);
 }
 
+
+
 /* Back */
 .flip-card-back {
-  color: #fff;
+  background-color: var(--card-color);
   transform: rotateY(180deg);
 }
 
 .flip-card-back p {
   margin-bottom: 15px;
+  color: #fff;
 }
 
 /* Skills Bar */
